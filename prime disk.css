@@ -16,6 +16,13 @@ body {
    
 }
 
+.item{
+    margin-right: 50px;
+    padding-top: 100px;
+    width: 250px;
+    height: 280px;
+}
+
 .poisk{
     margin-top: 20px;
     display: flex;
@@ -28,8 +35,15 @@ img {
 }
 
 .grid {
+    padding: 20px;
+    width: 260px; 
+    height: 280px;
+}
+
+.grid:hover {
     width: 260px; 
     height: 260px;
+    border: 1px solid rgb(0, 0, 0);
 }
 
 #search{
@@ -47,3 +61,29 @@ img {
     margin-bottom: 0px;
     text-align: center;
 }
+.grid2{
+    font-family: "Kanit", sans-serif;
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 250px);
+    justify-content: space-around;
+}
+.grid1{
+    font-family: "Kanit", sans-serif;
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 250px);
+    justify-content: space-around;
+}
+.h3{
+    font-family: "Lobster", sans-serif;
+}
+.grid3{
+    font-family: "Kanit", sans-serif;
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 250px);
+    justify-content: space-around;
+}
+
+
