@@ -23,3 +23,5 @@ if (hasResults) {
     noResultsMessage.style.display = 'block';
 }
 });
+
+
