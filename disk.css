@@ -3,18 +3,41 @@
 body {
     font-family: "Kanit", sans-serif;
 }
-.item{
-    margin-left: 50px;
-    padding-top: 100px;
-    width: 350px;
-    height: 380px;
+
+.main {
+	display: flex;
+	justify-content: center;
 }
 
+img {
+	width: 600px;
+}
 
-.table {
-	width: 100%;
-	border: none;
-	margin-bottom: 20px;
+.cost {
+	width: 800px;
+	border: solid black 1px;
+}
+
+.bye {
+	display: flex;
+	justify-content: space-between;
+}
+
+.character {
+	margin-right: 50px;
+    
+}
+
+.dilivery {
+	margin-left: 20px;
+
+}
+#myButton{
+	width: 120px;
+	height: 25px;
+	border-radius: 40px;
+	color: rgb(0, 0, 0);
+	background-color: rgb(183, 255, 0);
 }
 .table thead th {
 	font-weight: bold;
