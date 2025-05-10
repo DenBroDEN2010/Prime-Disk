@@ -5,6 +5,7 @@ body {
 }
 
 .main {
+	gap: 40px;
 	display: flex;
 	justify-content: center;
 }
@@ -14,31 +15,60 @@ img {
 }
 
 .cost {
-	width: 800px;
+	width: 700px;
 	border: solid black 1px;
+	border-radius: 10px;
 }
 
 .bye {
 	display: flex;
-	justify-content: space-between;
+	justify-content: left;
+	gap: 200px;
 }
 
-.character {
-	margin-right: 50px;
-    
+.left-bye {
+	margin-left: 20px;
 }
+
+.character{
+	margin-right: 20px;
+}
+
 
 .dilivery {
-	margin-left: 20px;
+
 
 }
-#myButton{
+#bye{
 	width: 120px;
 	height: 25px;
 	border-radius: 40px;
 	color: rgb(0, 0, 0);
-	background-color: rgb(183, 255, 0);
+	background-color: rgb(46, 232, 0);
+
 }
+
+#minus:hover {
+    width: 25px; 
+    height: 25px;
+    border: 1px solid rgb(0, 0, 0);
+	background-color: rgb(255, 123, 0);
+}
+
+#plus:hover {
+    width: 25px; 
+    height: 25px;
+    border: 1px solid rgb(0, 0, 0);
+	background-color: rgb(255, 149, 0);
+}
+
+#bye:hover {
+    width: 120px; 
+    height: 25px;
+    border: 1px solid rgb(0, 0, 0);
+	background-color: rgb(255, 145, 0);
+}
+
 .table thead th {
 	font-weight: bold;
 	text-align: left;
@@ -69,3 +99,4 @@ img {
 .table tbody tr td:last-child {
 	border-radius: 0 8px 8px 0;
 }
+
