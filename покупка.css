@@ -1,0 +1,19 @@
+.modal_form{
+    font-family: "Lobster", sans-serif;
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 260px 260px 260px;
+    grid-template-rows: 100px;
+    display: flex;
+    justify-content: center;
+    gap: 270px;
+   
+	border: solid black 1px;
+	border-radius: 10px;
+}
+
+
+h2{
+    font-family: "Lobster", sans-serif;
+    text-align: center;
+}
