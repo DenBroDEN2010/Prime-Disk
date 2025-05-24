@@ -1,51 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="покупка.css">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="покупка.css" />
+    <title>Запрос на покупку</title>
 </head>
 <body>
-	<h2>Запрос на покупку</h2>
+    <h2>Запрос на покупку</h2>
 
-<div class="modal_form">
-	<form id="buyForm2" onsubmit="return false;">
-		<input type="hidden" name="system_form_id" value="187">
-		<input type="hidden" name="system_template" value="buyAcess">
-		<input type="hidden" value="/webforms/posted/" name="ref_onsuccess">
-		<input type="hidden" name="data[new][buy_check]" value="">
-		<input type="hidden" name="system_email_to" value="3874">
-		<ul>
-	<li class="fieldsBlock buy_name">
-	<span>Ваше имя <i>*</i></span>
-	<input type="text" name="data[new][buy_name]" id="buy_name" value="" obligatory="required">
-</li><li class="fieldsBlock buy_email">
-	<span>Эл.почта <i>*</i></span>
-	<input type="text" name="data[new][buy_email]" id="buy_email" value="" obligatory="required">
-</li><li class="fieldsBlock buy_phone">
-	<span>Телефон <i></i></span>
-	<input type="text" name="data[new][buy_phone]" id="buy_phone" value="" obligatory="" placeholder="+7 (       )         -" maxlength="17">
-</li><li class="fieldsBlock">
-	<span>Примечание к заказу <i></i></span>
-	<textarea name="data[new][buy_text]" id="buy_text" obligatory=""></textarea>
-</li><li class="fieldsBlock buy_product">
-	<span>Товар <i></i></span>
-	<input type="text" name="data[new][buy_product]" id="buy_product" value="" obligatory="">
-</li><li class="fieldsBlock" style="display: none;">
-	<span>Параметры <i></i></span>
-	<textarea name="data[new][buy_params]" id="buy_params" obligatory=""></textarea>
-</li>
+    <div class="modal_form">
+        <form>
+            <input type="hidden" name="system_form_id" value="187" />
+            <input type="hidden" name="system_template" value="buyAcess" />
+            <input type="hidden" name="ref_onsuccess" value="/webforms/posted/" />
+            <input type="hidden" name="data[new][buy_check]" value="" />
+            <input type="hidden" name="system_email_to" value="3874" />
 
-	
-	
-	<li>
-		<input type="submit" class="sendBuyForm" value="Отправить сообщение">
-	
-	</li>
-</ul>
-	</form>
-</div>
+            <ul>
+                <li class="fieldsBlock buy_name">
+                    <label for="buy_name">
+                        Ваше имя <i>*</i>
+                    </label>
+                    <input 
+                        type="text" 
+                        name="data[new][buy_name]" 
+                        id="buy_name" 
+                        value="" 
+                        obligatory="required" 
+                    />
+                </li>
 
+                <li class="fieldsBlock buy_email">
+                    <label for="buy_email">
+                        Эл.почта <i>*</i>
+                    </label>
+                    <input 
+                        type="text" 
+                        name="data[new][buy_email]" 
+                        id="buy_email" 
+                        value="" 
+                        obligatory="required" 
+                    />
+                </li>
+
+                <li class="fieldsBlock buy_phone">
+                    <label for="buy_phone">
+                        Телефон
+                    </label>
+                    <input 
+                        type="text" 
+                        name="data[new][buy_phone]" 
+                        id="buy_phone" 
+                        value="" 
+                        placeholder="+7 (       )         -" 
+                        maxlength="17" 
+                        obligatory="" 
+                    />
+                </li>
+
+                <li class="fieldsBlock premechaniya">
+                    <label for="buy_text">
+                        Примечание к заказу
+                    </label>
+                </li>
+
+				<li>
+					<textarea 
+                        name="data[new][buy_text]" 
+                        id="buy_text" 
+                        obligatory=""
+                    ></textarea>
+				</li>
+
+                <li class="fieldsBlock buy_product">
+                    <label for="buy_product">
+                        Товар
+                    </label>
+                    <input 
+                        type="text" 
+                        name="data[new][buy_product]" 
+                        id="buy_product" 
+                        value="" 
+                        obligatory="" 
+                    />
+                </li>
+
+                <li class="fieldsBlock" style="display: none;">
+                    <label for="buy_params">
+                        Параметры
+                    </label>
+                    <textarea 
+                        name="data[new][buy_params]" 
+                        id="buy_params" 
+                        obligatory=""
+                    ></textarea>
+                </li>
+
+                <button id="qwer">Отправить сообщение</button>
+            </ul>
+        </form>
+    </div>
+
+    <script src="кнопка2.js"></script>
 </body>
 </html>
